@@ -1,0 +1,24 @@
+{
+  "name": "sass_live_streaming",
+  "version": "1.0.0",
+  "description": "landing page",
+  "homepage": "https://github.com/xssnua/landing_live_streaming#readme",
+  "bugs": {
+    "url": "https://github.com/xssnua/landing_live_streaming/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xssnua/landing_live_streaming.git"
+  },
+  "license": "ISC",
+  "author": "Sonya",
+  "type": "commonjs",
+  "source": "index.html",
+  "scripts": {
+    "sass:watch": "sass --style=expanded --watch styles:dist"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.1",
+    "sass": "^1.94.2"
+  }
+}
