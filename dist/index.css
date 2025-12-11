@@ -1146,6 +1146,117 @@ hr {
   }
 }
 
+.form-section__bg-cloud {
+  width: 700px;
+  height: 240px;
+  background: url("../assets/img/cloud_alpha.png") center/contain no-repeat;
+}
+
+.form__name, .form__email, .form__text {
+  width: 100%;
+  height: 47px;
+  border-radius: 20px;
+  border: 1px solid #B4B4B4;
+  padding: 0 1em;
+  font-size: 25px;
+  font-weight: 400;
+  font-style: normal;
+  color: #000;
+}
+.form__name::placeholder, .form__email::placeholder, .form__text::placeholder {
+  font-size: 25px;
+  font-weight: 100;
+  font-style: normal;
+  color: #B4B4B4;
+}
+
+.form-section {
+  padding: 180px 15px;
+  position: relative;
+  overflow: hidden;
+}
+.form-section .cloud--left {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: -350px;
+}
+.form-section .cloud--right {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: -350px;
+}
+.form-section__wrapper {
+  width: 100%;
+  height: 360px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  column-gap: 0;
+  row-gap: 0;
+}
+@media (max-width: 1200px) {
+  .form-section {
+    padding: 220px 15px 240px 15px;
+  }
+}
+
+.form {
+  width: min(625px, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  column-gap: 0;
+  row-gap: 23px;
+}
+.form__title {
+  font-size: 36px;
+  font-weight: 400;
+  font-style: normal;
+  color: #000;
+}
+.form__submit-btn {
+  width: 100%;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  font-size: 25px;
+  font-weight: 500;
+  font-style: normal;
+  color: #FFF;
+  background-color: #000;
+}
+.form__submit-btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+@media (max-width: 768px) {
+  .form__title {
+    font-size: 32px;
+    font-weight: 400;
+    font-style: normal;
+    color: #000;
+  }
+  .form__name, .form__email, .form__text {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    color: #000;
+  }
+  .form__name::placeholder, .form__email::placeholder, .form__text::placeholder {
+    font-size: 18px;
+    font-weight: 100;
+    font-style: normal;
+    color: #B4B4B4;
+  }
+}
+
 body {
   background-color: #678FF2;
 }
